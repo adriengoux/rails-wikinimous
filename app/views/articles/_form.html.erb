@@ -1,0 +1,16 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <%= f.label :url %>
+  <%= f.text_field :url %>
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to "article list", articles_path %></p>

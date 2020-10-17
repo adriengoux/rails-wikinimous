@@ -1,0 +1,11 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.author %></p>
+<p><%= @article.content %></p>
+<p><%= @article.url %></p>
+<p><%= @article.rating %></p>
+
+<p><%= link_to "edit", edit_article_path %></p>
+<p><%= link_to "delete", article_path, method: :delete, data: { confirm: "sure? really?"} %></p>
+
+<p><%= link_to "article list", articles_path %></p>
